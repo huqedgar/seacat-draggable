@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Seacat Draggable</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.4.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="main">
+      <video id="video1" src="boat.webm" autoplay loop muted></video>
+      <video id="video2" src="boat.webm" autoplay loop muted></video>
+      <div id="container">
+        <div id="dragme">
+          <div class="cir"></div>
+          <i class="ri-arrow-right-line"></i>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="700"
+            height="700"
+            viewBox="0 0 700 700"
+          >
+            <defs>
+              <style>
+                .cls-1,
+                .cls-3 {
+                  fill: none;
+                }
+
+                .cls-1 {
+                  stroke: #ff9823;
+                  stroke-linecap: round;
+                  stroke-width: 20px;
+                  stroke-dasharray: 1081;
+                }
+
+                .cls-2 {
+                  stroke: none;
+                }
+              </style>
+            </defs>
+            <g id="ellipse" data-name="ellipse" class="cls-1">
+              <circle class="cls-2" cx="350" cy="350" r="350" />
+              <circle class="cls-3" cx="350" cy="350" r="342.5" />
+            </g>
+          </svg>
+        </div>
+        <div class="end-reach">
+          <div class="on-cir"></div>
+        </div>
+        <div class="end"></div>
+      </div>
+    </div>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"
+      integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/Draggable.min.js"
+      integrity="sha512-S6SXKUZ11xkCoD/UuhdXG4B4iiCXng+xW2KCx0lgfQqmdqtjqGgm4WChdYIhO1F/CmH21vnkSUvPEgXNgDwkjg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="script.js"></script>
+  </body>
+</html>
